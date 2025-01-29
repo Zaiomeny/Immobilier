@@ -1,0 +1,490 @@
+/* The Guru's template helps me greatly to focus onlu upon coding,
+ unfortinutely some styles doesn't match to my feeling
+ and sometimes I had just to personalize some elements cause the main template doesn't include them;
+ these are the reasons why I did this customization */
+
+.input-group-img {
+    width: 41px;
+    height: 41px;
+    border-radius: 5px 0 0 5px;
+}
+button{
+    border: none;
+}
+.d-flex{
+    display:flex;
+    gap:1em;
+}
+
+/* Welcome page buttons */
+.link:hover {
+    cursor: pointer !important;
+}
+
+.text-menu {
+    background-color: transparent;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.text-menu:hover {
+    background-color: #fff;
+    color: #303549 !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+.text-menu:focus {
+    background-color: #4680ff;
+    color: #fff !important;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 900000;
+}
+
+
+/* Fix the unexcepted behavior of LogOut button */
+.btn-logout[type="submit"],
+.btn-logout[type="submit"]:visited {
+    border: none;
+    font-size: 15px;
+    padding-left: 0;
+    color: #666;
+    background-color: inherit;
+    outline: none !important;
+}
+
+.btn-logout[type="submit"]:hover {
+    cursor: pointer;
+}
+
+/* Welcome page*/
+.home-img {
+    width: 100%;
+    height: 90vh;
+    background: url(../images/home.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    filter: blur(5px);
+    align-items: center;
+}
+
+.home-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.home-text>h1 {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    color: #303549;
+    font-size: 900;
+}
+
+.home-sample {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;
+    gap: 20px;
+    transition: all 0.3s ease;
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 750px;
+    position: absolute;
+    left: 50%;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    top: 100%;
+    transform: translate(-50%, -60%)
+}
+
+.sample-item {
+    background: url(../images/sample/Salon.png) no-repeat center;
+    background-size: cover;
+}
+
+.sample-item:nth-child(2) {
+    background: url(../images/sample/Salon1.png) no-repeat center;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background-size: cover;
+}
+
+.sample-item:nth-child(3) {
+    background: url(../images/sample/Salon2.png) no-repeat center;
+    background-size: cover;
+}
+
+/*Welcome page footer*/
+footer {
+    background-color: #303549;
+    padding: 2rem auto;
+    text-align: center;
+}
+
+footer span {
+    color: #fff;
+}
+.user-actions{
+    position: relative;
+}
+
+.user-actions>ul{
+    position: absolute;
+    left: -65px;
+    top: -1px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #919aa393;
+    padding: .4em .6em;
+}
+.user-actions>ul::after{
+    content:'';
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    border: 7px solid;
+    border-color: transparent transparent transparent #919aa359;
+
+}
+.user-actions a:hover{
+    background-color: #919aa30b;
+    color: #fff;
+}
+/* Comment component starts*/
+.main-comment {
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #919aa33e;
+    border-radius: 5px;
+}
+
+.comment-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    background: #919aa30b;
+}
+
+.comment-header-left img {
+    float: left;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.comment-header-left .comment-user-details {
+    float: right;
+}
+
+.comment-header-right {
+    position: relative;
+}
+
+.comment-header-right i {
+    color: #919aa3;
+}
+
+.comment-header-right i:hover {
+    cursor: pointer;
+}
+
+.comment-user-details span:first-child {
+    display: block;
+    font-weight: 600;
+}
+
+.comment-user-details span:last-child {
+    display: block;
+    font-size: 10px;
+    color: #919aa3;
+}
+
+.comment-content {
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+.comment-actions {
+    border: 1px solid #919aa393;
+    background: #fff;
+    position: absolute;
+    transition: .2s ease-in-out;
+    top: -2px;
+    right: 23px;
+    border-radius:6px;
+    padding: 5px 0;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 3px;
+    right: -15px;
+    border: 7px solid;
+    border-color: transparent transparent transparent #919aa359;
+}
+
+.comment-actions ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comment-actions a {
+    padding: 5px 8px;
+    display: block;
+}
+
+.comment-actions a:hover {
+    background-color: #919aa30b;
+    color: #fff;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.post-item-user{
+    display: flex;
+    gap:5px;
+}
+.post-item-user img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user-details>:nth-child(1){
+    display:block;
+}
+
+.search-box{
+    display:flex;
+    justify-content:space-between;
+}
+.filters{
+    width: 100%;
+    display:flex;
+    justify-content: end;
+    padding: 0.25em 1.8em;
+    gap: 15px;
+}
+.x-filter{
+    color:#cca;
+}
+.x-filter:hover{
+    cursor: pointer;
+}
+.upload-image{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    margin: 0 0 1.6em 0;
+}
+.upload-image-col{
+    width: 100%;
+}
+.upload-image-col span{
+    display: block;
+    font-size:18px;
+    font-weight: 700;
+}
+.upload-image-col img{
+    width: 100%;
+    border-radius: .6rem;
+}
+option[selected]{
+    background: #f2f2f2;
+}
+
+/* User-profile starts */
+.user-img-profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.8em;
+    background-color:#f2f2f2 ;
+    border-radius: 5px;
+    padding:1.8em;
+}
+.user-img-profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.about-user{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2em;
+    gap:10px;
+}
+.user-name,
+.followers,
+.subscribeTo,
+.toggle-follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+.followers,
+.subscribeTo{
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding:1.6em;
+}
+.toggle-follow
+{
+    flex-direction: row;
+    width: 100%;
+}
+.btn-follow 
+{
+    width: 100% !important;
+    background-color: #f2f2f2;
+    color:#000;
+}
+.post-item{
+    width: 100%;
+    padding-bottom: 2.8em;
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr, 200px);
+}
+.post-img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1.6em;
+}
+.post-btns,
+.post-name,
+.post-badge{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-btns>*{
+    border-radius: 5px;
+}
+.post-name>div{
+    margin: 1rem 0 auto 0;
+}
+.comment-setup{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+}
+/* User-profile ends */
+
+
+/* Handle the responsive behavior */
+@media (max-width:1065px) {
+    .m-t-page {
+        margin-top: 2rem !important;
+    }
+}
+
+@media (max-width:992px) {
+    .home-text>h1 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .home-sample {
+        height: 110px;
+        width: 600px;
+    }
+
+    .m-t-page {
+        margin-top: 1rem !important;
+    }
+}
+
+@media (max-width:800px) {
+    .m-t-page {
+        margin-top: 0rem !important;
+    }
+
+    .home-text {
+        top: 50%;
+        transition: all .3s ease;
+    }
+
+    .home-sample {
+        height: 100px;
+        width: 450px;
+    }
+}
+
+@media (max-width:650px) {
+    nav ul.navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .p-y-page {
+        padding-top: 1.7rem !important;
+    }
+
+    .home-text>h1 {
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+
+    .home-sample {
+        height: 80px;
+        width: 300px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:480px) {
+    .navbar-brand {
+        font-size: 0.25rem;
+    }
+
+    nav ul.navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .text-menu {
+        font-weight: normal;
+        width: 45px;
+        padding-left: 0px;
+    }
+
+    .home-text>h1 {
+        font-size: 1.6em;
+    }
+
+    .home-sample {
+        height: 50px;
+        width: 180px;
+    }
+
+    footer span {
+        font-size: 10px;
+    }
+}
